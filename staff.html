@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademik Kadro - Samsun Üniversitesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .staff-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .staff-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .staff-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-color);
+            background-color: var(--card-border);
+        }
+
+        .staff-info {
+            flex: 1;
+        }
+
+        .staff-name {
+            font-size: 1.15rem;
+            margin-bottom: 2px;
+            color: var(--text-primary);
+        }
+
+        .staff-title {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .staff-areas {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .staff-email {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .staff-email:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <div class="top-bar-links">
+                    <span>Samsun Üniversitesi</span>
+                    <span>EBYS</span>
+                    <span>UZEM</span>
+                    <span>E-Posta</span>
+                </div>
+                <div class="top-bar-links">
+                    <span>Ara</span>
+                    <span>TR</span>
+                </div>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-img">
+                        <img src="images/logo.jpg" alt="Samsun Üniversitesi"
+                            style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Yazılım Mühendisliği</span>
+                        <span class="logo-subtitle">Samsun Üniversitesi</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Bölüm Hakkında</a></li>
+                    <li><a href="staff.html" class="active">Akademik Kadro</a></li>
+                    <li><a href="courses.html">Ders Planı</a></li>
+                    <li><a href="duyurular.html">Duyurular</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header container">
+        <span class="hero-tag">Bölüm • İnsan Kaynağı</span>
+        <h1 style="margin-bottom: 20px;">Akademik Kadro</h1>
+        <p style="max-width: 600px; font-size: 1.1rem;">Bölümümüzün akademik gücünü oluşturan öğretim üyeleri ve
+            araştırma görevlileri.</p>
+    </section>
+
+    <!-- Staff Cards -->
+    <section class="section container" style="padding-top: 0;">
+        <div class="card-grid">
+
+            <!-- Doç. Dr. Zafer Cömert -->
+            <div class="card staff-card">
+                <div class="staff-header">
+                    <img src="images/ZaferH.png" alt="Doç. Dr. Zafer Cömert" class="staff-img">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Doç. Dr. Zafer Cömert</h3>
+                        <span class="staff-title">Bölüm Başkanı</span>
+                    </div>
+                </div>
+                <p class="staff-areas">Yapay zeka, bilgisayarlı görü, veri analitiği</p>
+                <a href="mailto:zafer.comert@samsun.edu.tr" class="staff-email">
+                    <i class='bx bx-envelope'></i> zafer.comert@samsun.edu.tr
+                </a>
+            </div>
+
+            <!-- Doç. Dr. Muammer Türkoğlu -->
+            <div class="card staff-card">
+                <div class="staff-header">
+                    <img src="images/MuammerH.png" alt="Doç. Dr. Muammer Türkoğlu" class="staff-img">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Doç. Dr. Muammer Türkoğlu</h3>
+                        <span class="staff-title">Öğretim Üyesi</span>
+                    </div>
+                </div>
+                <p class="staff-areas">Makine öğrenmesi, büyük veri, yazılım mimarisi</p>
+                <a href="mailto:muammer.turkoglu@samsun.edu.tr" class="staff-email">
+                    <i class='bx bx-envelope'></i> muammer.turkoglu@samsun.edu.tr
+                </a>
+            </div>
+
+            <!-- Arş. Gör. Ferhat Arat -->
+            <div class="card staff-card">
+                <div class="staff-header">
+                    <img src="images/FerhatH.png" alt="Arş. Gör. Ferhat Arat" class="staff-img">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Arş. Gör. Ferhat Arat</h3>
+                        <span class="staff-title">Araştırma Görevlisi</span>
+                    </div>
+                </div>
+                <p class="staff-areas">Blokzincir, risk analizi, güvenli yazılım geliştirme</p>
+                <a href="mailto:ferhat.arat@samsun.edu.tr" class="staff-email">
+                    <i class='bx bx-envelope'></i> ferhat.arat@samsun.edu.tr
+                </a>
+            </div>
+
+            <!-- Dr. Öğr. Üyesi Emel Soylu -->
+            <div class="card staff-card">
+                <div class="staff-header">
+                    <img src="images/EmelH.png" alt="Dr. Öğr. Üyesi Emel Soylu" class="staff-img">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Dr. Öğr. Üyesi Emel Soylu</h3>
+                        <span class="staff-title">Öğretim Üyesi</span>
+                    </div>
+                </div>
+                <p class="staff-areas">Web teknolojileri, insan-bilgisayar etkileşimi</p>
+                <a href="mailto:emel.soylu@samsun.edu.tr" class="staff-email">
+                    <i class='bx bx-envelope'></i> emel.soylu@samsun.edu.tr
+                </a>
+            </div>
+
+            <!-- Doç. Dr. Selçuk Çakmak -->
+            <div class="card staff-card">
+                <div class="staff-header">
+                    <img src="images/SelcukH.png" alt="Doç. Dr. Selçuk Çakmak" class="staff-img">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Doç. Dr. Selçuk Çakmak</h3>
+                        <span class="staff-title">Öğretim Üyesi</span>
+                    </div>
+                </div>
+                <p class="staff-areas">Yazılım test süreçleri, kalite güvence, mobil uygulamalar</p>
+                <a href="mailto:selcuk.cakmak@samsun.edu.tr" class="staff-email">
+                    <i class='bx bx-envelope'></i> selcuk.cakmak@samsun.edu.tr
+                </a>
+            </div>
+
+            <!-- Doç. Dr. Abdulkadir Karacı -->
+            <div class="card staff-card">
+                <div class="staff-header">
+                    <img src="images/KaraciH.png" alt="Doç. Dr. Abdulkadir Karacı" class="staff-img">
+                    <div class="staff-info">
+                        <h3 class="staff-name">Doç. Dr. Abdulkadir Karacı</h3>
+                        <span class="staff-title">Araştırma Görevlisi</span>
+                    </div>
+                </div>
+                <p class="staff-areas">Veri tabanları, backend sistemler, nesne yönelimli programlama</p>
+                <a href="mailto:abdulkadir.karaci@samsun.edu.tr" class="staff-email">
+                    <i class='bx bx-envelope'></i> abdulkadir.karaci@samsun.edu.tr
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Bölüm Hakkında</h4>
+                    <p class="card-text">Çağdaş eğitim anlayışı, araştırma kültürü ve sektör odaklı yaklaşımı bir araya
+                        getiren güçlü bir akademik yapı.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="duyurular.html">Duyurular</a></li>
+                        <li><a href="haberler.html">Haberler</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="belgeler.html">Belgeler ve Formlar</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosyal Medya</h4>
+                    <p class="card-text" style="margin-bottom: 15px;">Instagram, LinkedIn, YouTube ve X üzerinden bölüm
+                        gelişmelerini takip edebilirsiniz.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="font-size: 1.5rem;"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" style="font-size: 1.5rem;"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" style="font-size: 1.5rem;"><i class='bx bxl-youtube'></i></a>
+                        <a href="#" style="font-size: 1.5rem;"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Samsun Üniversitesi Yazılım Mühendisliği Bölümü
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
